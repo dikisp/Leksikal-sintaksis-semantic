@@ -1,0 +1,17 @@
+program ini21;
+type
+	jeje = array [1..2] of real;
+	qq = record 
+	vd,gg : integer;
+	cc : string;
+	end;
+const
+	jojo = 11.2 ;
+var 
+	kss,mm : integer;
+
+	
+begin
+	dd[1] := 1 + 21 < 2;
+	kk := 7;
+end.
