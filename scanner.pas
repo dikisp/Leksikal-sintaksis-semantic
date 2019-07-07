@@ -23,7 +23,7 @@ procedure scan;
 begin
      clrscr;
      gotoxy(30,1);writeln('==========PROSES SCAN==========');
-     assign(t,'E:\Data\Diki\Kuliah\Semester 6\TK\Tugas besar\scanner\input.txt');
+     assign(t,'E:\Data\Diki\Kuliah\Semester 6\TK\Tugas besar\scanner\input2.txt');
      reset(t);
      i := 1;
      while not eof(t) do
@@ -435,6 +435,7 @@ begin
           begin
                writeln('ERROR : ',masukan,' dan ',terminal,' tidak sesuai');
                delay(65535);halt;
+               //delay max 65535
           end;
      end;
 
@@ -574,7 +575,7 @@ end;
 
 procedure p_string;
 var
-q : integer;
+q : integer;  //tidak terpakai
 begin
      z := 1;
      cek(chr(39));
@@ -1122,21 +1123,23 @@ begin
      hasil := 'DITERIMA';
      writeln;
      writeln(hasil);
+     readln();
 end;
 
 begin
      scan;
      parser;
-     readln;
+     readln();
 end.
 
 {
-     z :=1;
+     z := 1;
      scan;
      repeat
            writeln(stack[z]);
-           z := z+1;
-     until z = 30;
+           z := z++;
+     until z = 130;
+     readln();
      readln;
 
 }
