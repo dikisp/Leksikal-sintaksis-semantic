@@ -23,7 +23,7 @@ procedure scan;
 begin
      clrscr;
      gotoxy(30,1);writeln('==========PROSES SCAN==========');
-     assign(t,'C:\Dev-Pas\project\Kompiler\scanner\input.txt');
+     assign(t,'E:\Data\Diki\Kuliah\Semester 6\TK\Tugas besar\scanner\input.txt');
      reset(t);
      i := 1;
      while not eof(t) do
