@@ -101,8 +101,8 @@ begin
           if  (UpperCase(token[i+1])='T') then 
            if (UpperCase(token[i+2])='R') then 
            if (UpperCase(token[i+3])='I') then 
-            if  (UpperCase(token[i+4])='N') then
-            if  (UpperCase(token[i+5])='G') then
+          if  (UpperCase(token[i+4])='N') then
+          if  (UpperCase(token[i+5])='G') then
                 writeln('tipe data string');
            
         if  (UpperCase(token[i+0])='N') then 
